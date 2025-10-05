@@ -1,0 +1,5 @@
+{
+  "name": "Hifz Goal Tracker",
+  "description": "A simple tool to help you set and track your Quran memorization (Hifz) goals. Draft a message with your daily, weekly, and monthly targets and share it with your teacher (Muhaffiz) on WhatsApp.",
+  "requestFramePermissions": []
+}
