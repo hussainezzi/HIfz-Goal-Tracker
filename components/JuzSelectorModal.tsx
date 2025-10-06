@@ -74,8 +74,14 @@ const JuzSelectorModal: React.FC<JuzSelectorModalProps> = ({ isOpen, onClose, on
           <div>
             <h3 className="font-semibold text-dark-text mb-2">From</h3>
             <div className="grid grid-cols-2 gap-4">
-              {renderSelect(fromJuz, (e) => setFromJuz(Number(e.target.value)), juzOptions)}
-              {renderSelect(fromPage, (e) => setFromPage(Number(e.target.value)), pageOptions)}
+              <div>
+                <label className="block text-sm font-medium text-dark-text mb-1">ألجزء</label>
+                {renderSelect(fromJuz, (e) => setFromJuz(Number(e.target.value)), juzOptions)}
+              </div>
+              <div>
+                <label className="block text-sm font-medium text-dark-text mb-1">ألصفحة</label>
+                {renderSelect(fromPage, (e) => setFromPage(Number(e.target.value)), pageOptions)}
+              </div>
             </div>
           </div>
           
@@ -94,8 +100,14 @@ const JuzSelectorModal: React.FC<JuzSelectorModalProps> = ({ isOpen, onClose, on
              <div className="animate-fade-in">
               <h3 className="font-semibold text-dark-text mb-2">To</h3>
               <div className="grid grid-cols-2 gap-4">
-                {renderSelect(toJuz, (e) => setToJuz(Number(e.target.value)), juzOptions)}
-                {renderSelect(toPage, (e) => setToPage(Number(e.target.value)), pageOptions)}
+                <div>
+                  <label className="block text-sm font-medium text-dark-text mb-1">ألجزء</label>
+                  {renderSelect(toJuz, (e) => setToJuz(Number(e.target.value)), juzOptions)}
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-dark-text mb-1">ألصفحة</label>
+                  {renderSelect(toPage, (e) => setToPage(Number(e.target.value)), pageOptions)}
+                </div>
               </div>
             </div>
           )}
